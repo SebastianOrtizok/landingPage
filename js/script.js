@@ -17,7 +17,7 @@ function agregasecciones() {
 	let imagennew = document.createElement("img");
 	imagennew.src = "ruta/de/la/imagen.jpg"; // Aquí debes establecer la URL de la imagen
 	imagennew.className = "card-img-top imagen";
-	imagennew.alt = "...";
+	imagennew.alt = "Imagén producto";
 
 	// Crear un div con clase "card-body"
 	let cardBodyDiv = document.createElement("div");
@@ -50,7 +50,7 @@ function agregasecciones() {
 	description.className = "card-text descripcion";
 	description.textContent = "descripcion del producto";
 
-	// Agregar los elementos anidados en la estructura
+	// Agrego los elementos a la estructura
 	enlace.appendChild(imagennew);
 	cardBodyDiv.appendChild(listaUl);
 	listaUl.appendChild(star1);
@@ -98,6 +98,7 @@ fetch("js/jproductos.json")
 			let star3Element = star3Elements[i];
 			let star4Element = star4Elements[i];
 			let star5Element = star5Elements[i];
+			let descripcionElement = descripcionElements[i];
 
 			articuloElement.textContent = articulos[i].nombre;
 			imagenElement.src = articulos[i].imagen;
@@ -107,8 +108,7 @@ fetch("js/jproductos.json")
 			star4Element.className = articulos[i].star4;
 			star5Element.className = articulos[i].star5;
 			// let id = articulos[i].id;
-			// let descripcionElement = descripcionElements[i];
-			// descripcionElement.textContent = articulos[i].descripcion;
+			descripcionElement.textContent = articulos[i].descripcion.substring(0, 50) + "..."; //pongo los primeros 20 caracteres de la descipcion
 		}
 		// Almacena los artículos en localStorage
 		localStorage.setItem("Articulos", JSON.stringify(articulos));
@@ -146,7 +146,6 @@ fetch("js/jproductos.json")
 
 		// Llamada a la función para agregar las secciones
 
-		// ... Resto del código ...
 	})
 	.catch(function (error) {
 		console.error("Error al cargar el archivo JSON:", error);
@@ -158,3 +157,12 @@ let compras = JSON.parse(localStorage.getItem("carrito"));
 
 estadoCarrito.textContent = Object.keys(compras).length;
 console.log(compras);
+
+
+function chequeoCarrito() {
+	const estadoCarrito = document.getElementById("estadoCarrito");
+	let compras = JSON.parse(localStorage.getItem("carrito"));
+	
+	estadoCarrito.textContent = Object.keys(compras).length;
+	console.log(compras);
+}
