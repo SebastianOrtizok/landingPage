@@ -24,11 +24,11 @@ const html = `
     <div class="card-body">
         <ul class="list-unstyled d-flex justify-content-between">
             <li>
-                <i class="${star1Element} fa fa-star"></i>
-                <i class="${star2Element} fa fa-star"></i>
-                <i class="${star3Element} fa fa-star"></i>
-                <i class="${star4Element} text-muted fa fa-star"></i>
-                <i class="${star5Element} text-muted fa fa-star"></i>
+                <i class="${star1Element}"></i>
+                <i class="${star2Element}"></i>
+                <i class="${star3Element}"></i>
+                <i class="${star4Element}"></i>
+                <i class="${star5Element}"></i>
             </li>
             <li class="text-muted text-right">${precioElement}</li>
         </ul>
