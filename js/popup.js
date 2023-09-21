@@ -50,7 +50,11 @@ window.close();
     
         // Almaceno el carrito actualizado en LocalStorage
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        alert("Está agregando " + articuloElement + " a su carrito de compras")
+        alert("Está agregando " + articuloElement + " a su carrito de compras");
+
+        //evento para informar a index.html que actualice el carrito de compras
+        const event = new CustomEvent("itemAddedToCart");
+        window.opener.dispatchEvent(event);
         window.close();
     });
 

@@ -60,3 +60,7 @@ fetch("js/jproductos.json")
 	.catch(function (error) {
 		console.error("Error al cargar los datos:", error);
 	});
+
+	window.addEventListener("itemAddedToCart", function(event) {
+		chequeoCarrito();
+	});

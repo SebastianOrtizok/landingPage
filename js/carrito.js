@@ -33,18 +33,13 @@ eliminarArticulo.forEach(element => {
 // Eliminar artículo del carrito en localStorage
 function eliminarArticuloDelCarrito(idArticuloAEliminar) {
     carrito.forEach(function(articulo) {
-
-
       carrito = carrito.filter(articulo => articulo.idunique !== idArticuloAEliminar);
-            
             console.log(typeof articulo.idunique + "  " + articulo.idunique + " " + typeof idArticuloAEliminar + idArticuloAEliminar );
-
-    
     });
-    // Filtrar el carrito para eliminar el artículo con el ID correspondiente
-
     // Actualizar el carrito en localStorage sin el artículo eliminado
     localStorage.setItem("carrito", JSON.stringify(carrito));
+    location.reload()
+
 }
 
 
