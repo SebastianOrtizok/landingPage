@@ -32,7 +32,7 @@ fetch("js/jproductos.json")
 			document.querySelectorAll(".imagen").forEach(function (enlace) {
 				enlace.addEventListener("click", function () {
 					// Abre una nueva ventana emergente con la página correspondiente
-					const anchoPopup = window.innerWidth * 0.4;
+					const anchoPopup = window.innerWidth * 0.9;
 					const altoPopup = window.innerHeight * 1;
 					window.open(
 						"articulo.html",

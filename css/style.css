@@ -1,0 +1,12 @@
+/* Logo js */
+.logo {
+	font-family: "Roboto", sans-serif;
+    color: rgba(0, 173, 20) !important;
+	font-size: 32px !important;
+	font-weight: 100 !important;
+	text-shadow: 1px 1px 2px rgb(90, 90, 90);
+}
+
+.logo:hover {
+    color:rgb(3, 209, 27) !important;
+}
