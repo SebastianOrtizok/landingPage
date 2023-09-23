@@ -19,8 +19,9 @@ const elementoPadre="Articulo";
 const id=articulopopup.id;
 const eliminarBtn= "btn btn-danger d-none eliminar";
 
-agregasecciones(imagenElement,star1Element,star2Element,star3Element,star4Element,star5Element,precioElement,articuloElement,descripcionElement,elementoPadre,id,eliminarBtn)
-
+agregasecciones(imagenElement,star1Element,star2Element,star3Element,star4Element,star5Element,precioElement,articuloElement,descripcionElement,elementoPadre,id,eliminarBtn);
+const cardElement=document.querySelector(".col-md-4")
+cardElement.className = "col-12 col-md-12 mb-4";
     // Agrego evento al boton para cerrar la ventana
 document.getElementById("cerrarVentana").addEventListener("click", function() {
 window.close();
