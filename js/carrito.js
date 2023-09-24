@@ -13,7 +13,7 @@ let carrito = JSON.parse(carritoJSON) || [];
 carrito.forEach(function(articulo) {
     const elementoPadre = "total";
     let eliminarBtn = "btn btn-danger eliminar";
-    agregasecciones(articulo.imagen, articulo.star1, articulo.star2, articulo.star3, articulo.star4, articulo.star5, articulo.precio, articulo.nombre, "", elementoPadre, articulo.idunique, eliminarBtn);
+    agregasecciones(articulo, elementoPadre);
 
     total += parseFloat(articulo.precio.replace("Precio $", "").replace(",", ""));
     console.log(total);
