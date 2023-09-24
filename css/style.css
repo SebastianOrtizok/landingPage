@@ -10,3 +10,8 @@
 .logo:hover {
     color:rgb(3, 209, 27) !important;
 }
+.card:hover{
+	box-shadow: 0 0 5px 2px black;
+	transition: all .3s;
+}
+
