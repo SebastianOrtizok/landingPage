@@ -32,7 +32,7 @@ fetch("js/jproductos.json")
 			document.querySelectorAll(".imagen").forEach(function (enlace) {
 				enlace.addEventListener("click", function () {
 					// Abre una nueva ventana emergente con la página correspondiente
-					const anchoPopup = window.innerWidth * 0.5;
+					const anchoPopup = window.innerWidth * 0.9;
 					const altoPopup = window.innerHeight * 1;
 					window.open(
 						"articulo.html",
@@ -64,22 +64,3 @@ fetch("js/jproductos.json")
 	window.addEventListener("itemAddedToCart", function(event) {
 		chequeoCarrito();
 	});
-
-
-	//**Buscador */
-	let buscar= document.getElementById("search");
-	buscar.addEventListener("click" , () =>{
-		let wordSerch = document.getElementById("inputMobileSearch");
-		wordSerch=wordSerch.value.trim().toUpperCase();
-
-		const articulos=document.querySelectorAll(".articuloName");
-		articulos.forEach((articulo)=> {
-			const nombreArticuloTexto = articulo.textContent.trim().toUpperCase();
-			if (nombreArticuloTexto.includes(wordSerch)){
-				articulo.parentElement.scrollIntoView({ behavior: "smooth" });
-				console.log(wordSerch + "=" + articulo.textContent)
-			} 
-
-		})
-
-	})

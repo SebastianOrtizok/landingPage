@@ -34,7 +34,7 @@ const html = `
         </ul>
         <a
             href="articulo.html"
-            class="h2 text-decoration-none text-dark articuloName"
+            class="h2 text-decoration-none text-dark"
         >${articuloElement}</a
         >
         <p class="card-text">${descripcionElement}</p>
