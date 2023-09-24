@@ -1,7 +1,8 @@
 import { chequeoCarrito } from './funciones.js'; 
 import { agregasecciones } from './funciones.js'; 
 chequeoCarrito();
-
+// se declara un arreglo vacio para guardar el json y manipularlo 
+const articulos = []
 
 // Realizo la solicitud fetch para cargar el archivo JSON
 fetch("js/jproductos.json")
