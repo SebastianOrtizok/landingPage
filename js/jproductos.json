@@ -4,7 +4,7 @@
 		"nombre": "Linterna",
 		"descripcion": "Una linterna es un dispositivo portátil que emite luz mediante una fuente de energía, generalmente una batería, que alimenta una bombilla o un diodo emisor de luz (LED). Su principal función es proporcionar iluminación en situaciones de oscuridad o poca luz. Las linternas son utilizadas en una variedad de contextos, como actividades al aire libre, emergencias, exploración de lugares oscuros o simplemente para iluminar el camino en la oscuridad. Su diseño compacto y su facilidad de uso las convierten en una herramienta práctica y versátil en numerosas situaciones cotidianas.",
 		"imagen": "img/articulo1.jpg",
-		"precio": 5400,
+		"precio": 54570.50,
 		"puntuacion": "*****"
 	  },
 	  {
@@ -12,7 +12,7 @@
 		"nombre": "Cámara fotográfica",
 		"descripcion": "¡Captura momentos inolvidables con estilo y nostalgia! Presentamos nuestra cámara fotográfica vintage, una verdadera joya para los amantes de la fotografía y los admiradores del encanto retro. Esta cámara combina la artesanía clásica con la tecnología moderna para ofrecer una experiencia única de fotografía. Su diseño vintage evoca la nostalgia de tiempos pasados, mientras que su interior alberga funciones avanzadas que te permitirán tomar imágenes impresionantes con facilidad.g",
 		"imagen": "img/articulo2.jpg",
-		"precio": 54.00,
+		"precio": 85000,
 		"puntuacion": "***"
 	  },
 	  {
@@ -28,7 +28,7 @@
 		"nombre": "Zapatilla ",
 		"descripcion": "Da un paso hacia el éxito con nuestras zapatillas de alta gama. Diseñadas para rendir en cualquier terreno y llevar tu estilo al siguiente nivel. Descubre la comodidad y el soporte que necesitas para alcanzar tus metas en cada paso. ¡Equípate con las zapatillas que te llevarán a la cima del rendimiento y la moda!",
 		"imagen": "img/articulo4.jpg",
-		"precio": 54.00,
+		"precio": 32560,
 		"puntuacion": "****"
 	  },
 	  {
@@ -36,7 +36,7 @@
 		"nombre": "Zapatillas Addides",
 		"descripcion": "¡Experimenta la leyenda del deporte con las zapatillas Adidas! Diseñadas con la más alta tecnología y estilo icónico que ha perdurado a través del tiempo. Desde las pistas hasta las calles, nuestras zapatillas Adidas te brindarán un rendimiento incomparable y un look que nunca pasa de moda. Haz historia en cada paso con la marca que ha inspirado a atletas de todas las disciplinas. ¡Siente la energía imparable de Adidas en tus pies!",
 		"imagen": "img/articulo5.jpg",
-		"precio": 478.00,
+		"precio": 36500,
 		"puntuacion": "***"
 	  },
 	  {
@@ -44,7 +44,7 @@
 		"nombre": "Reloj Vintage",
 		"descripcion": "¡Eleva tu estilo con un toque de elegancia atemporal! Presentamos nuestro reloj vintage, una pieza única que combina el encanto del pasado con la funcionalidad moderna. Este reloj vintage es mucho más que un simple accesorio; es una declaración de tu aprecio por la artesanía y el diseño clásico. Su diseño retro evoca la belleza y la sofisticación de eras pasadas, mientras que su construcción con materiales de calidad asegura que siga siendo una pieza impresionante en el futuro.!",
 		"imagen": "img/articulo6.jpg",
-		"precio": 78.00,
+		"precio": 586500,
 		"puntuacion": "*****"
 	  }
 	]

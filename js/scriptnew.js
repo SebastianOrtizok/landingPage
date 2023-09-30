@@ -16,11 +16,6 @@ fetch("js/jproductos.json")
 			const articuloElement = articulos[i].nombre;
 			const imagenElement = articulos[i].imagen;
 			 puntos = articulos[i].puntuacion;
-			// const star1Element = articulos[i].star1;
-			// const star2Element = articulos[i].star2;
-			// const star3Element = articulos[i].star3;
-			// const star4Element = articulos[i].star4;
-			// const star5Element = articulos[i].star5;
 			const descripcionElement =
 			articulos[i].descripcion.substring(0, 50) + "...";
 			const precioElement = "";
