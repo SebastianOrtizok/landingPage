@@ -12,7 +12,7 @@ export { chequeoCarrito };
 
 
 
- function agregasecciones(imagenElement,star1Element,star2Element,star3Element,star4Element,star5Element,precioElement,articuloElement,descripcionElement,elementoPadre,id,eliminar) {
+ function agregasecciones(imagenElement,estrellitas,precioElement,articuloElement,descripcionElement,elementoPadre,id,eliminar) {
 
 const html = `
 <div class="card h-100">
@@ -24,11 +24,7 @@ const html = `
     <div class="card-body">
         <ul class="list-unstyled d-flex justify-content-between">
             <li>
-                <i class="${star1Element}"></i>
-                <i class="${star2Element}"></i>
-                <i class="${star3Element}"></i>
-                <i class="${star4Element}"></i>
-                <i class="${star5Element}"></i>
+                <span>${estrellitas}</span>
             </li>
             <li class="text-muted text-right">${precioElement}</li>
         </ul>
