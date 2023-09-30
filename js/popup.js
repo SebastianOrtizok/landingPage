@@ -18,19 +18,19 @@ const elementoPadre = "Articulo";
 const id = articulopopup.id;
 const eliminarBtn = "btn btn-danger d-none eliminar";
 
-let  estrellitas =""
+let  estrellitasElement =""
 for (let i=0; i<5; i++){
     if (i<puntos.length){
-        estrellitas+="⭐"
+        estrellitasElement+="⭐"
     }else {
-        estrellitas+="★"
+        estrellitasElement+="★"
 }	
 }
-estrellitas=estrellitas.replace(/^"(.*)"$/, '$1');
+estrellitasElement=estrellitasElement.replace(/^"(.*)"$/, '$1');
 
 agregasecciones(
 	imagenElement,
-	estrellitas,
+	estrellitasElement,
 	precioElement,
 	articuloElement,
 	descripcionElement,
@@ -57,11 +57,8 @@ document.getElementById("comprar").addEventListener("click", function () {
 		descripcion: descripcionElement,
 		precio: precioElement,
 		imagen: imagenElement,
-		star1: star1Element,
-		star2: star2Element,
-		star3: star3Element,
-		star4: star4Element,
-		star5: star5Element,
+		puntuacion: estrellitasElement,
+
 	};
 
 	carrito.push(nuevoArticulo);
