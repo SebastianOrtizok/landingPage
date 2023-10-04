@@ -12,7 +12,7 @@ export { chequeoCarrito };
 
 
 
- function agregasecciones(imagenElement,estrellitas,precioElement,articuloElement,descripcionElement,elementoPadre,id,eliminar) {
+ function agregasecciones(imagenElement,estrellitas,precioElement,articuloElement,descripcionElement,display,cantidad,elementoPadre,id,eliminar) {
 
 const html = `
 <div class="card h-100">
@@ -34,7 +34,14 @@ const html = `
         >${articuloElement}</a
         >
         <p class="card-text">${descripcionElement}</p>
+        <div class="contenedorBotones">
+        <div class="botones">
+        <span data-id="${id}" class="agregar quitar" ${display}>⬆</span>
+        <span data-id="${id}" class="cantidad" ${display}>${cantidad}</span>
+        <span data-id="${id}" class="agregar quitar" ${display}>⬇</span>
+        </div>
         <button data-id="${id}" type="eliminar" class="${eliminar} ">Eliminar artículo</button>
+        </div>
     </div>
 </div>`;
 

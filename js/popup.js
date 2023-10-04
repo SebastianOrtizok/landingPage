@@ -30,6 +30,8 @@ agregasecciones(
 	precioElement,
 	articuloElement,
 	descripcionElement,
+	"style='display: none'",
+	"",
 	elementoPadre,
 	id,
 	eliminarBtn
@@ -41,17 +43,30 @@ document.getElementById("cerrarVentana").addEventListener("click", function () {
 	window.close();
 });
 
-document.getElementById("comprar").addEventListener("click", function () {
+// Accedo al boton comprar
+let comprar=""
+comprar=document.getElementById("comprar")
 	// Obtengo los datos del carrito de localStorage si existe
 	let carritoJSON = localStorage.getItem("carrito");
 	let carrito = JSON.parse(carritoJSON) || [];
 	// Agrega el nuevo artículo al carrito
+
+	carrito.forEach(element => {
+		if (element.id==articulopopup.id){
+			comprar.disabled = true;
+			comprar.textContent = 'Artículo ya seleccionado';
+	}
+		
+	});
+	comprar.addEventListener("click", function () {
+
 	let nuevoArticulo = {
 		idunique: generateUniqueId(),
 		id: id,
 		nombre: articuloElement,
 		descripcion: descripcionElement,
 		precio: precioElement,
+		cantidad:1,
 		imagen: imagenElement,
 		puntuacion: estrellitasElement,
 

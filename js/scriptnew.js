@@ -11,6 +11,7 @@ async function cargarProductos() {
         const json = await response.json();
         const articulos = json;
         let puntos = "";
+        let display= "style='display: none'"
 
         for (let i = 0; i < articulos.length; i++) {
             const articuloElement = articulos[i].nombre;
@@ -18,6 +19,8 @@ async function cargarProductos() {
             puntos = articulos[i].puntuacion;
             const descripcionElement = articulos[i].descripcion.substring(0, 50) + "...";
             const precioElement = "";
+            display;
+            const cantidad=0;
             const elementoPadre = "padre";
             const id = articulos[i].id;
             const eliminarBtn = "btn btn-danger d-none eliminar";
@@ -33,8 +36,7 @@ async function cargarProductos() {
             }
 
             // Llama a la función agregasecciones para generar contenido dinámico
-            agregasecciones(imagenElement, estrellitas, precioElement, articuloElement, descripcionElement, elementoPadre, id, eliminarBtn);
-
+            agregasecciones(imagenElement,estrellitas,precioElement,articuloElement,descripcionElement,display,cantidad,elementoPadre,id,eliminarBtn)
            //* POPUP abro el elemento seleccionado en una página nueva*/
             document.querySelectorAll(".imagen").forEach(function (enlace) {
                 enlace.addEventListener("click", function () {

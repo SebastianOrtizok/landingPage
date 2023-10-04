@@ -46,5 +46,53 @@
 		"imagen": "img/articulo6.jpg",
 		"precio": 586500,
 		"puntuacion": "*****"
+	  },
+	  {
+		"id": 7,
+		"nombre": "Remera Nike",
+		"descripcion": "Remera Nike Talle: Medium zona Ezeiza",
+		"imagen": "img/ropadeportiva/foto1.jpg",
+		"precio": 6000,
+		"puntuacion": "*****"
+	  },
+	  {
+		"id": 8,
+		"nombre": "Remera Nike",
+		"descripcion": "Remera Nike dry fit Talle: Small Zona: Ezeiza",
+		"imagen": "img/ropadeportiva/foto2.jpg",
+		"precio": 7000,
+		"puntuacion": "*****"
+	  },
+	  {
+		"id": 9,
+		"nombre": "Remera Under Armour",
+		"descripcion": "Remera Under Armour DRI FIT Talle: Medium Zona: Ezeiza",
+		"imagen": "img/ropadeportiva/foto3.jpg",
+		"precio": 6000,
+		"puntuacion": "*****"
+	  },
+	  {
+		"id": 10,
+		"nombre": "Remera Térmica Puma",
+		"descripcion": "Remera Térmica PUMA Manga larga Talle: Small",
+		"imagen": "img/ropadeportiva/foto4.jpg",
+		"precio": 9000,
+		"puntuacion": "*****"
+	  },
+	  {
+		"id": 11,
+		"nombre": "Remera Puma",
+		"descripcion": "Remera PUMA Talle: Small Zona Eziza",
+		"imagen": "img/ropadeportiva/foto5.jpg",
+		"precio": 7000,
+		"puntuacion": "*****"
+	  },
+	  {
+		"id": 12,
+		"nombre": "Conjunto Messi (Inter Miami)",
+		"descripcion": "Talle Small Es como para un chico de 13 años aprox. Consultar por otras talles y productos",
+		"imagen": "img/ropadeportiva/foto6.jpg",
+		"precio": 10000,
+		"puntuacion": "*****"
 	  }
 	]
