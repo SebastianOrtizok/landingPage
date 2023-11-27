@@ -8,14 +8,16 @@ let total = 0;
 let carritoJSON = localStorage.getItem("carrito");
 let carrito = JSON.parse(carritoJSON) || [];
 
+
 // Agrego secciones para cada artículo en el carrito
 carrito.forEach(function (articulo) {
+	
+	console.log( articulo.precio)
 	let display="agregar o quitar"
 	const elementoPadre = "total";
 	let eliminarBtn = "btn btn-danger eliminar";
 	agregasecciones(
 		articulo.imagen,
-		articulo.puntuacion,
 		articulo.precio,
 		articulo.nombre,
 		"",

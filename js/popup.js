@@ -5,28 +5,28 @@ import { agregasecciones } from "./funciones.js";
 const obtengodato = localStorage.getItem("articulopopup");
 const articulopopup = JSON.parse(obtengodato);
 
-const articuloElement = articulopopup.nombre;
+const articuloElement = articulopopup.title;
 const descripcionElement = articulopopup.descripcion;
-const imagenElement = articulopopup.imagen;
-const puntos = articulopopup.puntuacion;
-const precioElement = "Precio $" + articulopopup.precio.toLocaleString();
+console.log(articuloElement)
+const imagenElement = articulopopup.thumbnail;
+// const puntos = articulopopup.puntuacion;
+const precioElement = "Precio $" + articulopopup.price;
 const elementoPadre = "Articulo";
 const id = articulopopup.id;
 const eliminarBtn = "btn btn-danger d-none eliminar";
 
 let  estrellitasElement =""
-for (let i=0; i<5; i++){
-    if (i<puntos.length){
-        estrellitasElement+="⭐"
-    }else {
-        estrellitasElement+="★"
-}	
-}
-estrellitasElement=estrellitasElement.replace(/^"(.*)"$/, '$1');
+// for (let i=0; i<5; i++){
+//     if (i<puntos.length){
+//         estrellitasElement+="⭐"
+//     }else {
+//         estrellitasElement+="★"
+// }	
+// }
+// estrellitasElement=estrellitasElement.replace(/^"(.*)"$/, '$1');
 
 agregasecciones(
 	imagenElement,
-	estrellitasElement,
 	precioElement,
 	articuloElement,
 	descripcionElement,
